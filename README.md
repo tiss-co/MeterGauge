@@ -1,4 +1,4 @@
-
+![MeterGaugeBanner](https://user-images.githubusercontent.com/35375629/107658858-cd98b580-6c9b-11eb-9542-a26f2061693a.jpg)
 
 # Requirements
 - Xcode 11+

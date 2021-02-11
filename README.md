@@ -70,6 +70,6 @@ gaugeView.indicatorTickOpacity = 1.0
 ```
 
 ## Licence
-Meter Gauge is available under the MIT license.
+Meter Gauge is available under the MIT license. See the [LICENSE.txt](https://github.com/boof-tech/MeterGauge/blob/main/LICENSE) file for more info.
 
 

@@ -16,7 +16,7 @@ pod 'MeterGauge'
 
 # Usage
 
-### Import GDGauge
+### Import MeterGauge
 ```swift
 import MeterGauge
 ```
@@ -38,7 +38,7 @@ guageView.segments.append(segment)
 gaugeView.set(value : Int)
 ```
 
-### Setup, customize gauge
+### Customize gauge
 ```swift 
 //Value
 gaugeView.valueFont = UIFont.systemFont(ofSize: 28, weight: .heavy)

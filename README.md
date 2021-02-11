@@ -39,29 +39,33 @@ gaugeView.set(value : Int)
 ```
 
 ### Customize gauge
+
+####Value
 ```swift 
-//Value
 gaugeView.valueFont = UIFont.systemFont(ofSize: 28, weight: .heavy)
 gaugeView.valueTextColor = UIColor.black
-
-//Description
+```
+####Description
+```swift 
 gaugeView.descriptionFont = UIFont.systemFont(ofSize: 28, weight: .heavy)
 gaugeView.descriptionTextColor = UIColor.black
-
-//Center Circle
+```
+####Center Circle
+```swift 
 gaugeView.centerCircleBackgroundColor = UIColor.clear
 gaugeView.centerCircleBorderWidth = 3.0
-
-//Ticks
+```
+####Ticks
+```swift 
 gaugeView.tickWidth = 7.0
 gaugeView.beforeIndicatorTickOpacity = 1.0
 gaugeView.afterIndicatorTickOpacity = 0.3
-
-//Indicator Tick Width
+```
+####Indicator Tick Width
+```swift 
 gaugeView.indicatorTickHeight = 10.0
 gaugeView.indicatorTickScale = 1.0
 gaugeView.indicatorTickOpacity = 1.0
-
 ```
 
 ## Licence

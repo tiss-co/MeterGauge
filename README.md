@@ -34,6 +34,7 @@ guageView.segments.append(segment)
 ```
 
 ### To update value
+![demo](https://user-images.githubusercontent.com/35375629/107659455-69c2bc80-6c9c-11eb-9e42-d92aea55a8a7.gif)
 ```swift
 gaugeView.set(value : Int)
 ```

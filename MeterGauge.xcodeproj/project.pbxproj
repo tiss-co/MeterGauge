@@ -10,6 +10,16 @@
 		291E03F025CC211F00BECBA0 /* MeterGauge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291E03E625CC211F00BECBA0 /* MeterGauge.framework */; };
 		291E03F525CC211F00BECBA0 /* MeterGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E03F425CC211F00BECBA0 /* MeterGaugeTests.swift */; };
 		291E03F725CC211F00BECBA0 /* MeterGauge.h in Headers */ = {isa = PBXBuildFile; fileRef = 291E03E925CC211F00BECBA0 /* MeterGauge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		291E040925CC21CD00BECBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E040825CC21CD00BECBA0 /* AppDelegate.swift */; };
+		291E040B25CC21CD00BECBA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E040A25CC21CD00BECBA0 /* SceneDelegate.swift */; };
+		291E040D25CC21CD00BECBA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E040C25CC21CD00BECBA0 /* ViewController.swift */; };
+		291E041025CC21CD00BECBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291E040E25CC21CD00BECBA0 /* Main.storyboard */; };
+		291E041225CC21CF00BECBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291E041125CC21CF00BECBA0 /* Assets.xcassets */; };
+		291E041525CC21CF00BECBA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291E041325CC21CF00BECBA0 /* LaunchScreen.storyboard */; };
+		291E041E25CC222800BECBA0 /* MeterGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E041D25CC222800BECBA0 /* MeterGauge.swift */; };
+		291E042425CC229900BECBA0 /* MeterGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E042325CC229900BECBA0 /* MeterGaugeView.swift */; };
+		291E042C25CC3E6500BECBA0 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E042B25CC3E6500BECBA0 /* Segment.swift */; };
+		29F9BBB725D52177002F178D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9BBB225D52057002F178D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,18 @@
 		291E03EF25CC211F00BECBA0 /* MeterGaugeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeterGaugeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		291E03F425CC211F00BECBA0 /* MeterGaugeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterGaugeTests.swift; sourceTree = "<group>"; };
 		291E03F625CC211F00BECBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291E040625CC21CD00BECBA0 /* MeterGaugeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeterGaugeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		291E040825CC21CD00BECBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		291E040A25CC21CD00BECBA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		291E040C25CC21CD00BECBA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		291E040F25CC21CD00BECBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		291E041125CC21CF00BECBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		291E041425CC21CF00BECBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		291E041625CC21CF00BECBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291E041D25CC222800BECBA0 /* MeterGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterGauge.swift; sourceTree = "<group>"; };
+		291E042325CC229900BECBA0 /* MeterGaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterGaugeView.swift; sourceTree = "<group>"; };
+		291E042B25CC3E6500BECBA0 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		29F9BBB225D52057002F178D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		291E040325CC21CD00BECBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +84,7 @@
 			children = (
 				291E03E825CC211F00BECBA0 /* MeterGauge */,
 				291E03F325CC211F00BECBA0 /* MeterGaugeTests */,
+				291E040725CC21CD00BECBA0 /* MeterGaugeExample */,
 				291E03E725CC211F00BECBA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +94,7 @@
 			children = (
 				291E03E625CC211F00BECBA0 /* MeterGauge.framework */,
 				291E03EF25CC211F00BECBA0 /* MeterGaugeTests.xctest */,
+				291E040625CC21CD00BECBA0 /* MeterGaugeExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +102,10 @@
 		291E03E825CC211F00BECBA0 /* MeterGauge */ = {
 			isa = PBXGroup;
 			children = (
+				291E042225CC227000BECBA0 /* MeterGaugeView */,
 				291E03E925CC211F00BECBA0 /* MeterGauge.h */,
 				291E03EA25CC211F00BECBA0 /* Info.plist */,
+				291E041D25CC222800BECBA0 /* MeterGauge.swift */,
 			);
 			path = MeterGauge;
 			sourceTree = "<group>";
@@ -84,6 +117,30 @@
 				291E03F625CC211F00BECBA0 /* Info.plist */,
 			);
 			path = MeterGaugeTests;
+			sourceTree = "<group>";
+		};
+		291E040725CC21CD00BECBA0 /* MeterGaugeExample */ = {
+			isa = PBXGroup;
+			children = (
+				291E040825CC21CD00BECBA0 /* AppDelegate.swift */,
+				291E040A25CC21CD00BECBA0 /* SceneDelegate.swift */,
+				29F9BBB225D52057002F178D /* Extensions.swift */,
+				291E040C25CC21CD00BECBA0 /* ViewController.swift */,
+				291E040E25CC21CD00BECBA0 /* Main.storyboard */,
+				291E041125CC21CF00BECBA0 /* Assets.xcassets */,
+				291E041325CC21CF00BECBA0 /* LaunchScreen.storyboard */,
+				291E041625CC21CF00BECBA0 /* Info.plist */,
+			);
+			path = MeterGaugeExample;
+			sourceTree = "<group>";
+		};
+		291E042225CC227000BECBA0 /* MeterGaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				291E042325CC229900BECBA0 /* MeterGaugeView.swift */,
+				291E042B25CC3E6500BECBA0 /* Segment.swift */,
+			);
+			path = MeterGaugeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +193,23 @@
 			productReference = 291E03EF25CC211F00BECBA0 /* MeterGaugeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		291E040525CC21CD00BECBA0 /* MeterGaugeExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291E041725CC21CF00BECBA0 /* Build configuration list for PBXNativeTarget "MeterGaugeExample" */;
+			buildPhases = (
+				291E040225CC21CD00BECBA0 /* Sources */,
+				291E040325CC21CD00BECBA0 /* Frameworks */,
+				291E040425CC21CD00BECBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeterGaugeExample;
+			productName = MeterGaugeExample;
+			productReference = 291E040625CC21CD00BECBA0 /* MeterGaugeExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,8 +221,12 @@
 				TargetAttributes = {
 					291E03E525CC211F00BECBA0 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					291E03EE25CC211F00BECBA0 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					291E040525CC21CD00BECBA0 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -168,6 +246,7 @@
 			targets = (
 				291E03E525CC211F00BECBA0 /* MeterGauge */,
 				291E03EE25CC211F00BECBA0 /* MeterGaugeTests */,
+				291E040525CC21CD00BECBA0 /* MeterGaugeExample */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +266,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		291E040425CC21CD00BECBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291E041525CC21CF00BECBA0 /* LaunchScreen.storyboard in Resources */,
+				291E041225CC21CF00BECBA0 /* Assets.xcassets in Resources */,
+				291E041025CC21CD00BECBA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291E041E25CC222800BECBA0 /* MeterGauge.swift in Sources */,
+				291E042C25CC3E6500BECBA0 /* Segment.swift in Sources */,
+				291E042425CC229900BECBA0 /* MeterGaugeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +294,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				291E03F525CC211F00BECBA0 /* MeterGaugeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291E040225CC21CD00BECBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291E040D25CC21CD00BECBA0 /* ViewController.swift in Sources */,
+				291E040925CC21CD00BECBA0 /* AppDelegate.swift in Sources */,
+				291E040B25CC21CD00BECBA0 /* SceneDelegate.swift in Sources */,
+				29F9BBB725D52177002F178D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +317,25 @@
 			targetProxy = 291E03F125CC211F00BECBA0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		291E040E25CC21CD00BECBA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				291E040F25CC21CD00BECBA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		291E041325CC21CF00BECBA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				291E041425CC21CF00BECBA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		291E03F825CC211F00BECBA0 /* Debug */ = {
@@ -341,6 +463,7 @@
 		291E03FB25CC211F00BECBA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y5SH4GJWBN;
@@ -357,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.edgecomenergy.MeterGauge;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +489,7 @@
 		291E03FC25CC211F00BECBA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y5SH4GJWBN;
@@ -389,6 +514,7 @@
 		291E03FE25CC211F00BECBA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5SH4GJWBN;
 				INFOPLIST_FILE = MeterGaugeTests/Info.plist;
@@ -407,6 +533,7 @@
 		291E03FF25CC211F00BECBA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5SH4GJWBN;
 				INFOPLIST_FILE = MeterGaugeTests/Info.plist;
@@ -416,6 +543,44 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.edgecomenergy.MeterGaugeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		291E041825CC21CF00BECBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5SH4GJWBN;
+				INFOPLIST_FILE = MeterGaugeExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.edgecomenergy.MeterGaugeExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		291E041925CC21CF00BECBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5SH4GJWBN;
+				INFOPLIST_FILE = MeterGaugeExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.edgecomenergy.MeterGaugeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +613,15 @@
 			buildConfigurations = (
 				291E03FE25CC211F00BECBA0 /* Debug */,
 				291E03FF25CC211F00BECBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291E041725CC21CF00BECBA0 /* Build configuration list for PBXNativeTarget "MeterGaugeExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291E041825CC21CF00BECBA0 /* Debug */,
+				291E041925CC21CF00BECBA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

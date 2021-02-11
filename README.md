@@ -11,7 +11,7 @@
 
 ## Cocoapods
 ```ruby
-pod 'MeterGauge'
+pod 'MeterGauge', :git => 'git@github.com:boof-tech/MeterGauge.git', :tag => '0.0.1'
 ```
 
 # Usage

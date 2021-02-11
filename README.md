@@ -59,6 +59,7 @@ gaugeView.afterIndicatorTickOpacity = 0.3
 
 //Indicator Tick Width
 gaugeView.indicatorTickHeight = 10.0
+gaugeView.indicatorTickScale = 1.0
 gaugeView.indicatorTickOpacity = 1.0
 
 ```

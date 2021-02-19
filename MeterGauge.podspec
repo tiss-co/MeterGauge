@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name          = "MeterGauge"
-  spec.version       = "0.0.4"
+  spec.version       = "0.0.5"
   spec.summary       = "Interactive energy progress indicator"
 
   spec.homepage      = "https://github.com/boof-tech/MeterGauge "
@@ -10,8 +10,8 @@ Pod::Spec.new do |spec|
   spec.license       = { :type => "MIT" }
   spec.author        = { "Boof Tech" => "info@boof.tech" }
   spec.platform      = :ios, "10.0"
-  spec.source        = { :git => 'https://github.com/boof-tech/MeterGauge.git', :tag => '0.0.4' }
-  spec.source_files  = "MeterGauge"
+  spec.source        = { :git => 'https://github.com/boof-tech/MeterGauge.git', :tag => '#{spec.version}'}
+  spec.source_files  = "MeterGauge/*.{h,m,swift}"
   spec.exclude_files  = "MeterGaugeExample"
 
 end

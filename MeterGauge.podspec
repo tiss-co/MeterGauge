@@ -11,6 +11,7 @@ Pod::Spec.new do |spec|
   spec.author        = { "Boof Tech" => "info@boof.tech" }
   spec.platform      = :ios, "10.0"
   spec.source        = { :git => 'https://github.com/boof-tech/MeterGauge.git', :tag => '0.0.2' }
-  spec.source_files  = "MeterGauge/*.{h,m}"
+  spec.source_files  = "MeterGauge"
+  spec.exclude_files  = "MeterGaugeExample"
 
 end

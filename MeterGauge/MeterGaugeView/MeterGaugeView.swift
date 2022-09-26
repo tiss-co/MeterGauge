@@ -41,6 +41,7 @@ class MeterGaugeView: UIView {
         }
     }
     var value : Int = 0
+    var descriptionString: String?
     
     //Description Label
     let descriptionLabel = UILabel()
@@ -197,6 +198,7 @@ class MeterGaugeView: UIView {
     func set(value : Int , description : String? = nil){
         let lastValue = self.value
         self.value = validateValue(value: value)
+        self.descriptionString = description
         let isPlus = getIsPlus(lastValue: lastValue, value: self.value)
         DispatchQueue.main.async {
             self.counterValue(counter: lastValue, value: self.value , discription: description, isPlus: isPlus)

@@ -96,6 +96,8 @@ public final class MeterGauge: UIView {
         }
     }
     
+    var value: Int = 0
+    
     
     public override init (frame : CGRect){
         super.init(frame: frame)
@@ -118,10 +120,14 @@ public final class MeterGauge: UIView {
         meterGaugeView = MeterGaugeView(frame: bounds)
         gaugeBackgroundColor = UIColor.clear
         self.addSubview(meterGaugeView)
+        meterGaugeView.set(value: value)
+        meterGaugeView.segments = segments
+        meterGaugeView.setup()
     }
     
     
     public func set(value : Int){
+        self.value = value
         meterGaugeView.set(value: value)
     }
     

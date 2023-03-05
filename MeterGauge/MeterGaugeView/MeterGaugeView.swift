@@ -98,7 +98,7 @@ class MeterGaugeView: UIView {
         }
     }
     
-    var segmentWidth : CGFloat = 0.0 
+    var segmentWidth : CGFloat = 0.0
     
     
     var segments : [Segment] = [] {
@@ -316,7 +316,7 @@ extension MeterGaugeView {
     }
     
     func getIsPlus(lastValue : Int , value : Int)-> Bool{
-        return value >= lastValue
+        return value > lastValue
     }
     
     func degToRad(_ number : CGFloat)->CGFloat{

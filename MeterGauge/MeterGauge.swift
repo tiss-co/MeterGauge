@@ -18,83 +18,19 @@ public final class MeterGauge: UIView {
         }
     }
     
-    public var gaugeBackgroundColor : UIColor = .clear {
-        didSet {
-            meterGaugeView.backgroundColor = gaugeBackgroundColor
-        }
-    }
-    
-    public var valueFont : UIFont = .systemFont(ofSize: 28, weight: .heavy){
-        didSet {
-            meterGaugeView.valueFont = valueFont
-        }
-    }
-    
-    public var valueTextColor : UIColor = .black{
-        didSet {
-            meterGaugeView.valueColor = valueTextColor
-        }
-    }
-    
-    public var descriptionFont : UIFont = .systemFont(ofSize: 18, weight: .regular){
-        didSet {
-            meterGaugeView.descriptionFont = descriptionFont
-        }
-    }
-
-    public var descriptionTextColor : UIColor = .black{
-        didSet {
-            meterGaugeView.descriptionColor = descriptionTextColor
-        }
-    }
-    
-    public var centerCircleBorderWidth : CGFloat = 3.0 {
-        didSet {
-            meterGaugeView.centerCircleBorderWidth = centerCircleBorderWidth
-        }
-    }
-    
-    public var centerCircleBackgroundColor : UIColor = .clear {
-        didSet {
-            meterGaugeView.centerCircleBgColor = centerCircleBackgroundColor
-        }
-    }
-    
-    public var tickWidth : CGFloat = 7.0 {
-        didSet {
-            meterGaugeView.tickWidth = tickWidth
-        }
-    }
-    
-    public var indicatorTickHeight : CGFloat = 10 {
-        didSet {
-            meterGaugeView.indicatorTickHeight = indicatorTickHeight
-        }
-    }
-    
-    public var indicatorTickOpacity : CGFloat = 1.0 {
-        didSet {
-            meterGaugeView.indicatorTickOpacity = indicatorTickOpacity
-        }
-    }
-    
-    public var indicatorTickScale : CGFloat = 1.0 {
-        didSet {
-            meterGaugeView.indicatorTickScale = indicatorTickScale
-        }
-    }
-    
-    public var beforeIndicatorTickOpacity : CGFloat = 1.0 {
-        didSet {
-            meterGaugeView.beforeIndicatorTickOpacity = beforeIndicatorTickOpacity
-        }
-    }
-    
-    public var afterIndicatorTickOpacity : CGFloat = 0.3 {
-        didSet {
-            meterGaugeView.afterIndicatorTickOpacity = afterIndicatorTickOpacity
-        }
-    }
+    public var gaugeBackgroundColor : UIColor = .clear
+    public var valueFont : UIFont = .systemFont(ofSize: 28, weight: .heavy)
+    public var valueTextColor : UIColor = .black
+    public var descriptionFont : UIFont = .systemFont(ofSize: 18, weight: .regular)
+    public var descriptionTextColor : UIColor = .black
+    public var centerCircleBorderWidth : CGFloat = 3.0
+    public var centerCircleBackgroundColor : UIColor = .clear
+    public var tickWidth : CGFloat = 7.0
+    public var indicatorTickHeight : CGFloat = 10
+    public var indicatorTickOpacity : CGFloat = 1.0
+    public var indicatorTickScale : CGFloat = 1.0
+    public var beforeIndicatorTickOpacity : CGFloat = 1.0
+    public var afterIndicatorTickOpacity : CGFloat = 0.3
     
     var value: Int = 0
     
@@ -106,25 +42,40 @@ public final class MeterGauge: UIView {
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        meterGaugeView.setup()
+        refreshUI()
     }
     
     public override func draw(_ rect: CGRect) {
         addGuageView()
     }
     
-    func addGuageView(){
+    public func addGuageView(){
         meterGaugeView.removeFromSuperview()
         let widthAndHeight = min(frame.size.width, frame.size.height)
         let bounds = CGRect(x: 0, y: 0, width: widthAndHeight, height: widthAndHeight)
         meterGaugeView = MeterGaugeView(frame: bounds)
-        gaugeBackgroundColor = UIColor.clear
         self.addSubview(meterGaugeView)
         meterGaugeView.set(value: value)
         meterGaugeView.segments = segments
-        meterGaugeView.setup()
+        refreshUI()
     }
     
+    public func refreshUI() {
+        meterGaugeView.backgroundColor = gaugeBackgroundColor
+        meterGaugeView.valueFont = valueFont
+        meterGaugeView.valueColor = valueTextColor
+        meterGaugeView.descriptionFont = descriptionFont
+        meterGaugeView.descriptionColor = descriptionTextColor
+        meterGaugeView.centerCircleBorderWidth = centerCircleBorderWidth
+        meterGaugeView.centerCircleBgColor = centerCircleBackgroundColor
+        meterGaugeView.tickWidth = tickWidth
+        meterGaugeView.indicatorTickHeight = indicatorTickHeight
+        meterGaugeView.indicatorTickOpacity = indicatorTickOpacity
+        meterGaugeView.indicatorTickScale = indicatorTickScale
+        meterGaugeView.beforeIndicatorTickOpacity = beforeIndicatorTickOpacity
+        meterGaugeView.afterIndicatorTickOpacity = afterIndicatorTickOpacity
+        meterGaugeView.setup()
+    }
     
     public func set(value : Int){
         self.value = value

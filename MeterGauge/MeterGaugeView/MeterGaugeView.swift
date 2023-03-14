@@ -10,7 +10,7 @@ class MeterGaugeView: UIView {
     //MARK : Variable
     //Center Circle
     let centerCircleView = UIView()
-    var centerCircleBorderWidth : CGFloat = 3.0{
+    var centerCircleBorderWidth : CGFloat = 3.0 {
         didSet {
             centerCircleView.layer.borderWidth = centerCircleBorderWidth
         }

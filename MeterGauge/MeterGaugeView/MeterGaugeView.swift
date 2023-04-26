@@ -205,10 +205,13 @@ class MeterGaugeView: UIView {
         }
     }
     
-    func counterValue(counter : Int ,value : Int , discription : String? , isPlus : Bool = false){
+    func counterValue(counter : Int, value : Int , discription : String? , isPlus : Bool = false){
         var counter = counter
         Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true){ t in
-            if counter == value { t.invalidate() }
+            if counter == value || counter > 100 || counter < 0 {
+                t.invalidate()
+                return
+            }
             self.setValueAndDescription(value: counter, description: discription)
             counter = isPlus ? counter + 1 : counter - 1
         }

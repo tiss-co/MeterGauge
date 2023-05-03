@@ -209,6 +209,7 @@ class MeterGaugeView: UIView {
         var counter = counter
         Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true){ t in
             if counter == value || counter > 100 || counter < 0 {
+                self.setValueAndDescription(value: counter, description: discription)
                 t.invalidate()
                 return
             }
